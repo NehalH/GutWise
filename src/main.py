@@ -21,9 +21,9 @@ model.fit(X_train, y_train)
 y_pred = model.predict(X_test)
 
 # Evaluate Performance and Construct Confusion Matrix
-confusion_mat = confusion_matrix(y_test, y_pred)
-print("Confusion Matrix:")
-print(confusion_mat)
+# confusion_mat = confusion_matrix(y_test, y_pred)
+# print("Confusion Matrix:")
+# print(confusion_mat)
 
 # Calculate Performance Metrics
 accuracy = accuracy_score(y_test, y_pred)
