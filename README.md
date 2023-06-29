@@ -1,7 +1,8 @@
 # GutWise
-Classification model and confusion matrix for analyzing gut health.
+Logistic Regression classification model for determining gut health.
 
-Welcome to the GutWise GitHub repository! GutWise is an innovative project focused on promoting gut health and providing valuable insights into the intricate relationship between lifestyle factors and the gut microbiota.
+## About
+GutWise is an innovative project focused on promoting gut health and providing valuable insights into the intricate relationship between lifestyle factors and the gut microbiota.
 
 This repository serves as a central hub for all the code, resources, and documentation related to GutWise. Our aim is to develop a comprehensive platform that empowers individuals to make informed choices for improving their gut health and overall well-being.
 
