@@ -1,5 +1,5 @@
 # GutWise
-Logistic Regression classification model for determining gut health.
+A Logistic Regression classification model for determining gut health.
 
 ## About
 GutWise is an innovative project focused on promoting gut health and providing valuable insights into the intricate relationship between lifestyle factors and the gut microbiota.
@@ -15,3 +15,48 @@ By leveraging the collective expertise and knowledge of contributors like you, w
 Thank you for your interest in GutWise. I invite you to explore this repository and contribute to this exciting and impactful project.
 
 Note: The GutWise project is not intended to replace professional medical advice or diagnosis. It is designed to provide information and tools for individuals interested in gut health and should be used in conjunction with guidance from healthcare professionals.
+
+
+## Installation
+
+1. Clone the repository:
+
+   ```shell
+   git clone https://github.com/NehalH/GutWise.git
+   ```
+2. Navigate to the project directory:
+
+   ```shell
+   cd GutWise
+   ```
+3. Install the required dependencies:
+   ```shell
+   pip install -r requirements.txt
+   ```
+
+## Custom usage
+
+1. Define and strip dataset:
+   
+    Remove any unwanted columns or rows from your .csv file (dataset) and save it as ```dataset.csv```.
+
+3. Place the dataset:
+   
+    Place the .csv file in ./src/dataset/ directory.
+   
+4. Define class header:
+   
+    Change the value of the variable ```target_variable``` to the column header of your class column.
+
+6. Preprocess the dataset:
+   
+     Run the following command in the terminal:
+     ```
+     python ./src/preprocessor.py
+     ```
+7. Train and test:
+
+     Run the following command in the terminal:
+     ```
+     python ./src/main.py
+     ```
