@@ -1,6 +1,6 @@
 import pandas as pd
 from sklearn.model_selection import train_test_split
-from sklearn.linear_model import LogisticRegression
+from sklearn.tree import DecisionTreeClassifier
 from sklearn.metrics import confusion_matrix, accuracy_score, precision_score, recall_score, f1_score
 
 target_variable = 'How often do you experience digestive discomfort (e.g., bloating, gas, indigestion)?'
@@ -14,7 +14,7 @@ y = data[target_variable]
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
 
 # Choose a Classification Model
-model = LogisticRegression(max_iter=1000) # Replace with your chosen classification algorithm
+model = DecisionTreeClassifier()
 
 # Train the Model
 model.fit(X_train, y_train)

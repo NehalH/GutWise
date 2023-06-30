@@ -1,5 +1,5 @@
 # GutWise
-A Logistic Regression classification model for determining gut health.
+A Decision Tree based classification model for determining gut health.
 
 ## About
 GutWise is an innovative project focused on promoting gut health and providing valuable insights into the intricate relationship between lifestyle factors and the gut microbiota.
