@@ -1,7 +1,8 @@
 import pandas as pd
 from sklearn.model_selection import train_test_split
-from sklearn.tree import DecisionTreeClassifier
+from sklearn.tree import DecisionTreeClassifier, plot_tree
 from sklearn.metrics import confusion_matrix, accuracy_score, precision_score, recall_score, f1_score
+import matplotlib.pyplot as plt
 
 target_variable = 'How often do you experience digestive discomfort (e.g., bloating, gas, indigestion)?'
 
@@ -18,6 +19,12 @@ model = DecisionTreeClassifier()
 
 # Train the Model
 model.fit(X_train, y_train)
+
+# Visualize the Decision Tree
+plt.figure(figsize=(10, 6))
+plot_tree(model, filled=True, feature_names=X.columns, class_names=model.classes_.astype(str).tolist())
+plt.savefig("decision_tree.png", format="png")  # Save the visualization as a PNG file
+plt.show()
 
 # Make Predictions
 y_pred = model.predict(X_test)
