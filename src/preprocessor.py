@@ -22,3 +22,4 @@ y = data[target_variable]
 # Save the preprocessed dataset to a new CSV file
 preprocessed_data = pd.concat([X, y], axis=1)
 preprocessed_data.to_csv('dataset/preprocessed_dataset.csv', index=False)
+print("Data preprocessing complete")
